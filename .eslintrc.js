@@ -26,5 +26,6 @@ module.exports = {
       'never',
     ],
     'no-restricted-syntax': ['error', 'BinaryExpression[operator=\'in\']'],
+    'vue/multi-word-component-names': 'off',
   },
 }

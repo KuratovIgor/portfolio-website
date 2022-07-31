@@ -1,0 +1,11 @@
+body {
+  font-family: 'Manrope';
+  background-color: #CFD3DC;
+  color: $color--white;
+}
+
+.text {
+  &-default {
+    font-size: 25px;
+  }
+}
