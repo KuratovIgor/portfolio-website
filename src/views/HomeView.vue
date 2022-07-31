@@ -4,7 +4,7 @@
 <template>
   <div class="home-page">
     <div class="home-page__profile">
-      <img class="home-page__profile-image" src="../assets/images/pprofile.png" alt="" />
+      <img class="home-page__profile-image" src="../assets/images/profile.png" alt="" />
     </div>
   </div>
 </template>
