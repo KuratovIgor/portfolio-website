@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
-import GithubLogo from '@/assets/icons/github.svg?component'
+import GithubLogo from '@/assets/icons/github.svg'
 
 const activeIndex = ref('1')
 </script>
@@ -18,7 +18,6 @@ const activeIndex = ref('1')
             :default-active="activeIndex"
             class="el-menu-demo"
             mode="horizontal"
-            @select="handleSelect"
         >
           <el-menu-item class="header__item text-default" index="1">
             <router-link to="/">

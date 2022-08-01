@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import ExperienceIcon from '@/assets/icons/experience.svg?component'
+import ExperienceIcon from '@/assets/icons/experience.svg'
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import DataIcon from '@/assets/icons/data.svg?component'
+import DataIcon from '@/assets/icons/data.svg'
 </script>
 
 <template>

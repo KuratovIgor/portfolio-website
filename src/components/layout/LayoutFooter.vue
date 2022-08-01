@@ -1,7 +1,6 @@
 <script lang="ts" setup>
-import Email from '@/assets/icons/email.svg?component'
-import Telegram from '@/assets/icons/telegram.svg?component'
-import Vk from '@/assets/icons/vk.svg?component'
+import Telegram from '@/assets/icons/telegram.svg'
+import Vk from '@/assets/icons/vk.svg'
 
 const handleOpenContact = (link: string): void => {
   window.open(link)
