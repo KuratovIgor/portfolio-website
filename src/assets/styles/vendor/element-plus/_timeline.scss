@@ -1,0 +1,32 @@
+.el-timeline {
+  &-item {
+    padding-bottom: 60px;
+
+    &__node {
+      background-color: var(--el-color-primary);
+    }
+
+    &__tail {
+      border-left: 3px solid var(--el-color-info);
+    }
+
+    &__timestamp {
+      font-size: 20px;
+    }
+
+    &__center {
+      &:first-child {
+
+      }
+    }
+  }
+}
+
+.el-timeline .el-timeline-item__center:first-child .el-timeline-item__tail {
+  height: calc(50% + 40px);
+  top: calc(50% - 30px);
+}
+
+.el-timeline .el-timeline-item__center:last-child .el-timeline-item__tail {
+  height: calc(50% - 30px);
+}

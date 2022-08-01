@@ -1,0 +1,15 @@
+.el-carousel__item[data-v-8ed88b5a]:nth-child(2n+1) {
+  background-color:    #fff;
+}
+
+.el-carousel__item[data-v-8ed88b5a]:nth-child(2n) {
+  background-color:   $color--gray-light;
+}
+
+.el-carousel__item--card {
+  border-radius: 20px;
+}
+
+.el-carousel__item--card.is-active {
+  box-shadow: 5px 5px 5px $color--gray-dark;
+}

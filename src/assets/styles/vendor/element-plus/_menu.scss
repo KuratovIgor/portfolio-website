@@ -1,0 +1,15 @@
+.el-menu {
+  background-color: transparent;
+
+  &--horizontal {
+    border: none;
+  }
+}
+
+.el-menu--horizontal .el-menu-item:not(.is-disabled):focus, .el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
+  background-color: transparent;
+}
+
+.el-menu--horizontal>.el-menu-item.is-active {
+  color: #000;
+}

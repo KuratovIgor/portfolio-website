@@ -1,26 +1,39 @@
 <script setup lang="ts">
+import Profile from '@/components/home/Profile.vue'
+import Experience from '@/components/home/Experience.vue'
+import HardSkills from '@/components/home/HardSkills.vue'
+import Projects from '@/components/home/Projects.vue'
 </script>
 
 <template>
   <div class="home-page">
-    <div class="home-page__profile">
-      <img class="home-page__profile-image" src="../assets/images/profile.png" alt="" />
-    </div>
+    <profile class="home-page__profile" />
+    <experience class="home-page__experience" />
+    <hard-skills class="home-page__hard-skills" />
+    <projects class="home-page__projects" />
   </div>
 </template>
 
 <style lang="scss" scoped >
 .home-page {
-  display: flex;
-  justify-content: center;
   &__profile {
-    &-image {
-      width: 600px;
-      height: 600px;
-      border: 2px solid #6b6d71;
-      border-radius: 50%;
-      box-shadow: 0 0 20px #6b6d71;
-    }
+    margin-bottom: 60px;
+    padding: 0 150px;
+  }
+
+  &__experience {
+    padding: 0 300px;
+    background-color: #E5EAF3;
+  }
+
+  &__hard-skills {
+    margin-bottom: 60px;
+    padding: 0 300px;
+  }
+
+  &__projects {
+    padding: 0 300px 60px;
+    background-color: #E5EAF3;
   }
 }
 </style>

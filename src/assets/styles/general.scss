@@ -1,11 +1,32 @@
 body {
   font-family: 'Manrope';
-  background-color: #CFD3DC;
+  background-color: $color--gray-light;
   color: $color--white;
 }
 
+a {
+  text-decoration: none;
+}
+
 .text {
+  &-title {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: $color--gray-dark;
+  }
+
   &-default {
+    line-height: 150%;
     font-size: 25px;
+    letter-spacing: 2px;
+  }
+
+  &-large {
+    font-size: 30px;
+  }
+
+  &-bold {
+    font-weight: 700;
   }
 }
