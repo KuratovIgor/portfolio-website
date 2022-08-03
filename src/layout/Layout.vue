@@ -1,8 +1,8 @@
 <template>
   <div class="layout">
     <layout-header class="layout__header" />
-    <!--<router-view />
-    <layout-footer />-->
+    <!--<router-view />-->
+    <layout-footer />
   </div>
 </template>
 

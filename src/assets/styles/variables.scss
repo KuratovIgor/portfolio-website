@@ -6,8 +6,9 @@ $color--gray-dark: #6b6d71;
 $color--gray-light: #cfd3dc;
 $color--text: #8d9095;
 
-$screen--mobile: 320px;
-$screen--tablet-min: 768px;
+$screen--mobile-min: 320px;
+$screen--mobile-max: 768px;
+$screen--tablet-min: 769px;
 $screen--laptop-min: 992px;
 $screen--laptop-max: 1200px;
 $screen--desktop-min: 1700px;

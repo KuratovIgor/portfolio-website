@@ -24,6 +24,10 @@ a {
     @media (max-width: $screen--laptop-min) {
       font-size: 20px;
     }
+
+    @media (max-width: $screen--mobile-max) {
+      font-size: 15px;
+    }
   }
 
   &-large {

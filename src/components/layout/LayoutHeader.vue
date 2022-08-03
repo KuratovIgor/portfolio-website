@@ -61,7 +61,7 @@ const activeIndex = ref('1')
       padding: 20px 30px;
     }
 
-    @media (max-width: $screen--tablet-min) {
+    @media (max-width: $screen--mobile-max) {
       padding: 10px 20px;
     }
   }
