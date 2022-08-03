@@ -8,9 +8,9 @@ import Projects from '@/components/home/Projects.vue'
 <template>
   <div class="home-page">
     <profile class="home-page__profile" />
-    <experience class="home-page__experience" />
+    <!--<experience class="home-page__experience" />
     <hard-skills class="home-page__hard-skills" />
-    <projects class="home-page__projects" />
+    <projects class="home-page__projects" />-->
   </div>
 </template>
 
@@ -34,6 +34,12 @@ import Projects from '@/components/home/Projects.vue'
   &__projects {
     padding: 0 300px 60px;
     background-color: #E5EAF3;
+  }
+
+  @media (max-width: $screen--desktop-max) {
+    &__profile {
+      padding: 0 30px;
+    }
   }
 }
 </style>

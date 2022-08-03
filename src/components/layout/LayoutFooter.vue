@@ -37,7 +37,7 @@ const handleOpenContact = (link: string): void => {
   &__wrapper {
     padding: 20px 300px;
 
-    @media (max-width: $screen--desktop-min) {
+    @media (max-width: $screen--desktop-max) {
       padding: 20px 120px;
     }
 
