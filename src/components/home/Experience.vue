@@ -79,7 +79,6 @@ import ExperienceIcon from '@/assets/icons/experience.svg'
     position: relative;
 
     &-title {
-      color: $color--gray-dark;
       letter-spacing: 2px;
 
       &-wrapper {
@@ -87,7 +86,7 @@ import ExperienceIcon from '@/assets/icons/experience.svg'
         padding-left: 80px;
 
         @media (max-width: $screen--mobile-max) {
-          padding-left: 40px;
+          padding-left: 0;
         }
       }
     }

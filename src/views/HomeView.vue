@@ -9,8 +9,8 @@ import Projects from '@/components/home/Projects.vue'
   <div class="home-page">
     <profile class="home-page__profile" />
     <experience class="home-page__experience" />
-    <!--<hard-skills class="home-page__hard-skills" />
-    <projects class="home-page__projects" />-->
+    <hard-skills class="home-page__hard-skills" />
+    <!--<projects class="home-page__projects" />-->
   </div>
 </template>
 
@@ -28,7 +28,7 @@ import Projects from '@/components/home/Projects.vue'
 
   &__hard-skills {
     margin-bottom: 60px;
-    padding: 0 300px;
+    padding: 0 200px;
   }
 
   &__projects {
@@ -42,6 +42,10 @@ import Projects from '@/components/home/Projects.vue'
     }
 
     &__experience {
+      padding: 0 30px;
+    }
+
+    &__hard-skills {
       padding: 0 30px;
     }
   }
