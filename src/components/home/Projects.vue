@@ -37,7 +37,9 @@ const handleOpenProject = (url: string): void => {
       <el-carousel
           v-if="$screen.size !== 'xs'"
           :interval="4000" type="card"
-          :height="$screen.size === 'xs' ? '200px' : '300px'"
+          :height="$screen.size === 'xs' ? '200px'
+          : $screen.size === 'sm' || $screen.size === 'md'
+           ? '250px' : '300px'"
       >
         <el-carousel-item v-for="project in projects" :key="project">
           <div class="projects__content-header">
