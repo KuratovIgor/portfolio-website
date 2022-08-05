@@ -8,8 +8,8 @@ import Projects from '@/components/home/Projects.vue'
 <template>
   <div class="home-page">
     <profile class="home-page__profile" />
-    <!--<experience class="home-page__experience" />
-    <hard-skills class="home-page__hard-skills" />
+    <experience class="home-page__experience" />
+    <!--<hard-skills class="home-page__hard-skills" />
     <projects class="home-page__projects" />-->
   </div>
 </template>
@@ -38,6 +38,10 @@ import Projects from '@/components/home/Projects.vue'
 
   @media (max-width: $screen--desktop-max) {
     &__profile {
+      padding: 0 30px;
+    }
+
+    &__experience {
       padding: 0 30px;
     }
   }

@@ -8,13 +8,22 @@ import ExperienceIcon from '@/assets/icons/experience.svg'
       <p class="text-title">Work experience</p>
     </div>
     <el-row class="experience__content" justify="space-between">
-      <el-col :span="14">
+      <el-col
+          v-if="$screen.size !== 'xl' && $screen.size !== 'lg'"
+          class="experience__content-title-wrapper"
+          :xl="6" :lg="8"
+      >
+        <p class="experience__content-title text-title text-bold">More 1 year</p>
+        <p class="experience__content-description text-default">Total work experience</p>
+        <experience-icon v-if="$screen.size !== 'xs'" class="experience__content-icon" />
+      </el-col>
+      <el-col :xl="14" :lg="14">
         <el-timeline>
           <el-timeline-item center timestamp="2021/07 - 2022/04">
             <el-card>
               <template #header>
                 <p class="experience__content-title text-large text-bold">
-                  Enterprise "LUCH", Novosibirsk
+                  ЛУЧ, Novosibirsk
                 </p>
               </template>
               <p class="experience__content-subtitle text-default text-bold">Software Engineer</p>
@@ -40,7 +49,7 @@ import ExperienceIcon from '@/assets/icons/experience.svg'
           </el-timeline-item>
         </el-timeline>
       </el-col>
-      <el-col :span="6">
+      <el-col v-if="$screen.size === 'xl' || $screen.size === 'lg'" :xl="6" :lg="8">
         <p class="experience__content-title text-title text-bold">More 1 year</p>
         <p class="experience__content-description text-default">Total work experience</p>
         <experience-icon class="experience__content-icon" />
@@ -56,12 +65,31 @@ import ExperienceIcon from '@/assets/icons/experience.svg'
     justify-content: center;
     margin-bottom: 100px;
     padding-top: 20px;
+
+    @media (max-width: $screen--laptop-max) {
+      margin-bottom: 70px;
+    }
+
+    @media (max-width: $screen--mobile-max) {
+      margin-bottom: 30px;
+    }
   }
 
   &__content {
+    position: relative;
+
     &-title {
       color: $color--gray-dark;
       letter-spacing: 2px;
+
+      &-wrapper {
+        margin-bottom: 20px;
+        padding-left: 80px;
+
+        @media (max-width: $screen--mobile-max) {
+          padding-left: 40px;
+        }
+      }
     }
 
     &-subtitle {
@@ -75,9 +103,21 @@ import ExperienceIcon from '@/assets/icons/experience.svg'
     }
 
     &-icon {
-      width: 450px;
+      max-width: 100%;
       color: $color--gray;
       opacity: 0.4;
+
+      @media (max-width: $screen--laptop-max) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0.2;
+      }
+
+      @media (max-width: $screen--laptop-min) {
+        max-width: 500px;
+        max-height: 500px;
+      }
     }
   }
 }
