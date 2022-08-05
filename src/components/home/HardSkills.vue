@@ -64,19 +64,34 @@ import DataIcon from '@/assets/icons/data.svg'
           </template>
         </el-progress>
 
-        <el-progress type="dashboard" :percentage="100" :width="$screen.size === 'xs' ? '140' : '200'" status="warning">
+        <el-progress
+            type="dashboard"
+            :percentage="100"
+            :width="$screen.size === 'xs' ? '140' : '200'"
+            status="warning"
+        >
           <template #default>
             <span class="hard-skills__content-item text-large">Git</span>
           </template>
         </el-progress>
 
-        <el-progress type="dashboard" :percentage="100" :width="$screen.size === 'xs' ? '140' : '200'" status="exception">
+        <el-progress
+            type="dashboard"
+            :percentage="100"
+            :width="$screen.size === 'xs' ? '140' : '200'"
+            status="exception"
+        >
           <template #default>
             <span class="hard-skills__content-item text-large">Nuxt JS</span>
           </template>
         </el-progress>
 
-        <el-progress type="dashboard" :percentage="100" :width="$screen.size === 'xs' ? '140' : '200'" status="warning">
+        <el-progress
+            type="dashboard"
+            :percentage="100"
+            :width="$screen.size === 'xs' ? '140' : '200'"
+            status="warning"
+        >
           <template #default>
             <span class="hard-skills__content-item text-large">
               El - Plus
@@ -84,13 +99,23 @@ import DataIcon from '@/assets/icons/data.svg'
           </template>
         </el-progress>
 
-        <el-progress type="dashboard" :percentage="100" :width="$screen.size === 'xs' ? '140' : '200'" status="exception">
+        <el-progress
+            type="dashboard"
+            :percentage="100"
+            :width="$screen.size === 'xs' ? '140' : '200'"
+            status="exception"
+        >
           <template #default>
             <span class="hard-skills__content-item text-large">Linters</span>
           </template>
         </el-progress>
 
-        <el-progress type="dashboard" :percentage="100" :width="$screen.size === 'xs' ? '140' : '200'" status="warning">
+        <el-progress
+            type="dashboard"
+            :percentage="100"
+            :width="$screen.size === 'xs' ? '140' : '200'"
+            status="warning"
+        >
           <template #default>
             <span class="hard-skills__content-item text-large">Node JS</span>
           </template>
