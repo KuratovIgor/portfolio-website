@@ -34,7 +34,33 @@ const handleOpenProject = (url: string): void => {
       <p class="text-title">Some of my projects</p>
     </div>
     <div class="projects__content">
-      <el-carousel :interval="4000" type="card" height="300px">
+      <el-carousel
+          v-if="$screen.size !== 'xs'"
+          :interval="4000" type="card"
+          :height="$screen.size === 'xs' ? '200px' : '300px'"
+      >
+        <el-carousel-item v-for="project in projects" :key="project">
+          <div class="projects__content-header">
+            <p class="projects__content-title text-large text-bold">{{ project.title }}</p>
+          </div>
+          <div class="projects__content-wrapper">
+            <p class="projects__content-description text-default">{{ project.description }}</p>
+            <el-button
+                class="projects__content-button"
+                type="primary"
+                @click="handleOpenProject(project.url)"
+            >
+              Look this
+            </el-button>
+          </div>
+        </el-carousel-item>
+      </el-carousel>
+      <el-carousel
+          v-else
+          :interval="4000"
+          indicator-position="outside"
+          :height="$screen.size === 'xs' ? '200px' : '300px'"
+      >
         <el-carousel-item v-for="project in projects" :key="project">
           <div class="projects__content-header">
             <p class="projects__content-title text-large text-bold">{{ project.title }}</p>
@@ -75,6 +101,14 @@ const handleOpenProject = (url: string): void => {
     justify-content: center;
     margin-bottom: 100px;
     padding-top: 20px;
+
+    @media (max-width: $screen--laptop-max) {
+      margin-bottom: 70px;
+    }
+
+    @media (max-width: $screen--mobile-max) {
+      margin-bottom: 30px;
+    }
   }
 
   &__content {
@@ -87,6 +121,10 @@ const handleOpenProject = (url: string): void => {
       padding-top: 20px;
       color: $color--gray-dark;
       letter-spacing: 2px;
+
+      @media (max-width: $screen--mobile-max) {
+        margin-bottom: 10px;
+      }
     }
 
     &-wrapper {
@@ -96,6 +134,15 @@ const handleOpenProject = (url: string): void => {
       justify-content: space-between;
       padding: 0 40px;
       height: 200px;
+
+      @media (max-width: $screen--laptop-min) {
+        padding: 0 20px;
+        height: 150px;
+      }
+
+      @media (max-width: $screen--mobile-max) {
+        height: 120px;
+      }
     }
 
     &-description {
@@ -114,21 +161,5 @@ const handleOpenProject = (url: string): void => {
       color: $color--gray-dark
     }
   }
-}
-
-.el-carousel__item h3 {
-  color: #475669;
-  opacity: 0.75;
-  line-height: 100px;
-  margin: 0;
-  text-align: center;
-}
-
-.el-carousel__item:nth-child(2n) {
-  background-color: #99a9bf;
-}
-
-.el-carousel__item:nth-child(2n + 1) {
-  background-color: #d3dce6;
 }
 </style>

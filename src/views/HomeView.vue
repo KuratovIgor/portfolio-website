@@ -10,7 +10,7 @@ import Projects from '@/components/home/Projects.vue'
     <profile class="home-page__profile" />
     <experience class="home-page__experience" />
     <hard-skills class="home-page__hard-skills" />
-    <!--<projects class="home-page__projects" />-->
+    <projects class="home-page__projects" />
   </div>
 </template>
 
@@ -32,7 +32,7 @@ import Projects from '@/components/home/Projects.vue'
   }
 
   &__projects {
-    padding: 0 300px 60px;
+    padding: 0 200px 60px;
     background-color: #E5EAF3;
   }
 
@@ -47,6 +47,10 @@ import Projects from '@/components/home/Projects.vue'
 
     &__hard-skills {
       padding: 0 30px;
+    }
+
+    &__projects {
+      padding: 0 30px 30px;
     }
   }
 }
