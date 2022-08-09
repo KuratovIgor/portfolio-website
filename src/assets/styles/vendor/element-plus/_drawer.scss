@@ -1,0 +1,13 @@
+.el-drawer {
+  background: $color--gray-light;
+  //color: $color--gray-dark;
+
+  &__header {
+    margin-bottom: 50px;
+    padding: 40px 30px 0;
+  }
+
+  &__body {
+    padding: 0;
+  }
+}

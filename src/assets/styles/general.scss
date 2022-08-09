@@ -8,6 +8,10 @@ a {
   text-decoration: none;
 }
 
+.router-link-active {
+  color: var(--el-color-danger-dark-2);
+}
+
 .text {
   &-title {
     font-size: 50px;

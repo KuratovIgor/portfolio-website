@@ -19,11 +19,11 @@ import DataIcon from '@/assets/icons/data.svg'
         <el-progress
             type="dashboard"
             :percentage="100"
-            :width="$screen.size === 'xs' ? '140' : '200'"
+            :width="$screen.size === 'xs' ? '120' : '200'"
             status="warning"
         >
           <template #default>
-            <span class="hard-skills__content-item text-large">
+            <span class="hard-skills__content-item text-default">
               TypeScript
             </span>
           </template>
@@ -32,33 +32,33 @@ import DataIcon from '@/assets/icons/data.svg'
         <el-progress
             type="dashboard"
             :percentage="100"
-            :width="$screen.size === 'xs' ? '140' : '200'"
+            :width="$screen.size === 'xs' ? '120' : '200'"
             status="exception"
         >
           <template #default>
-            <span class="hard-skills__content-item text-large">JavaScript</span>
+            <span class="hard-skills__content-item text-default">JavaScript</span>
           </template>
         </el-progress>
 
         <el-progress
             type="dashboard"
             :percentage="100"
-            :width="$screen.size === 'xs' ? '140' : '200'"
+            :width="$screen.size === 'xs' ? '120' : '200'"
             status="warning"
         >
           <template #default>
-            <span class="hard-skills__content-item text-large">Vue JS</span>
+            <span class="hard-skills__content-item text-default">Vue JS</span>
           </template>
         </el-progress>
 
         <el-progress
             type="dashboard"
             :percentage="100"
-            :width="$screen.size === 'xs' ? '140' : '200'"
+            :width="$screen.size === 'xs' ? '120' : '200'"
             status="exception"
         >
           <template #default>
-            <span class="hard-skills__content-item text-large">
+            <span class="hard-skills__content-item text-default">
               Webpack
             </span>
           </template>
@@ -67,33 +67,33 @@ import DataIcon from '@/assets/icons/data.svg'
         <el-progress
             type="dashboard"
             :percentage="100"
-            :width="$screen.size === 'xs' ? '140' : '200'"
+            :width="$screen.size === 'xs' ? '120' : '200'"
             status="warning"
         >
           <template #default>
-            <span class="hard-skills__content-item text-large">Git</span>
+            <span class="hard-skills__content-item text-default">Git</span>
           </template>
         </el-progress>
 
         <el-progress
             type="dashboard"
             :percentage="100"
-            :width="$screen.size === 'xs' ? '140' : '200'"
+            :width="$screen.size === 'xs' ? '120' : '200'"
             status="exception"
         >
           <template #default>
-            <span class="hard-skills__content-item text-large">Nuxt JS</span>
+            <span class="hard-skills__content-item text-default">Nuxt JS</span>
           </template>
         </el-progress>
 
         <el-progress
             type="dashboard"
             :percentage="100"
-            :width="$screen.size === 'xs' ? '140' : '200'"
+            :width="$screen.size === 'xs' ? '120' : '200'"
             status="warning"
         >
           <template #default>
-            <span class="hard-skills__content-item text-large">
+            <span class="hard-skills__content-item text-default">
               El - Plus
             </span>
           </template>
@@ -102,22 +102,22 @@ import DataIcon from '@/assets/icons/data.svg'
         <el-progress
             type="dashboard"
             :percentage="100"
-            :width="$screen.size === 'xs' ? '140' : '200'"
+            :width="$screen.size === 'xs' ? '120' : '200'"
             status="exception"
         >
           <template #default>
-            <span class="hard-skills__content-item text-large">Linters</span>
+            <span class="hard-skills__content-item text-default">Linters</span>
           </template>
         </el-progress>
 
         <el-progress
             type="dashboard"
             :percentage="100"
-            :width="$screen.size === 'xs' ? '140' : '200'"
+            :width="$screen.size === 'xs' ? '120' : '200'"
             status="warning"
         >
           <template #default>
-            <span class="hard-skills__content-item text-large">Node JS</span>
+            <span class="hard-skills__content-item text-default">Node JS</span>
           </template>
         </el-progress>
       </el-col>

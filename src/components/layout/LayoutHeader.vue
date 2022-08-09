@@ -3,14 +3,21 @@ import { ref } from 'vue'
 import GithubLogo from '@/assets/icons/github.svg'
 import MenuBurger from '@/assets/icons/burger.svg'
 
+const emit = defineEmits<{(e: 'open-menu')
+}>()
+
 const activeIndex = ref('1')
+
+const handleOpenMenu = (): void => {
+  emit('open-menu')
+}
 </script>
 
 <template>
   <div class="header">
     <el-row class="header__wrapper" align="center">
       <el-col v-if="$screen.size === 'xs'" :xs="18">
-        <menu-burger class="header__burger" />
+        <menu-burger class="header__burger" @click="handleOpenMenu" />
       </el-col>
       <template v-else>
         <el-col :xl="12" :lg="10" :md="6" :sm="4">
