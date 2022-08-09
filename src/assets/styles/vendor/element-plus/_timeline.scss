@@ -1,5 +1,6 @@
 .el-timeline {
   &-item {
+    z-index: 5;
     padding-bottom: 60px;
 
     &__node {
@@ -19,14 +20,27 @@
 
       }
     }
+
+    @media (max-width: $screen--mobile-max) {
+      padding-bottom: 30px;
+    }
   }
 }
 
 .el-timeline .el-timeline-item__center:first-child .el-timeline-item__tail {
   height: calc(50% + 40px);
   top: calc(50% - 30px);
+
+  @media (max-width: $screen--mobile-max) {
+    height: calc(50% + 10px);
+    top: calc(50% - 10px);
+  }
 }
 
 .el-timeline .el-timeline-item__center:last-child .el-timeline-item__tail {
   height: calc(50% - 30px);
+
+  @media (max-width: $screen--mobile-max) {
+    height: calc(50% - 10px);
+  }
 }
