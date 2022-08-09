@@ -6,10 +6,30 @@
   background-color:   $color--gray-light;
 }
 
+.el-carousel__item {
+  border-radius: 20px;
+}
+
 .el-carousel__item--card {
   border-radius: 20px;
+
+  @media (max-width: $screen--laptop-min) {
+    height: 240px;
+  }
+
+  @media (max-width: $screen--mobile-max) {
+    height: 180px;
+  }
 }
 
 .el-carousel__item--card.is-active {
   box-shadow: 5px 5px 5px $color--gray-dark;
+}
+
+.el-carousel__item h3 {
+  color: #475669;
+  opacity: 0.75;
+  line-height: 100px;
+  margin: 0;
+  text-align: center;
 }

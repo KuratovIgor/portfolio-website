@@ -8,71 +8,116 @@ import DataIcon from '@/assets/icons/data.svg'
       <p class="text-title">Hard Skills</p>
     </div>
     <el-row class="hard-skills__content" justify="space-between">
-      <el-col :span="10">
+      <el-col class="hard-skills__content-title-wrapper" :xl="7" :lg="8">
         <p class="hard-skills__content-title text-title text-bold">
           The main tools
         </p>
         <p class="hard-skills__content-description text-default">That I use in my work</p>
-        <data-icon class="hard-skills__content-icon" />
+        <data-icon v-if="$screen.size !== 'xs'" class="hard-skills__content-icon" />
       </el-col>
-      <el-col :span="14" class="hard-skills__content-wrapper">
-        <el-progress type="dashboard" :percentage="100" width="200" status="warning">
+      <el-col :xl="12" :lg="14" class="hard-skills__content-wrapper">
+        <el-progress
+            type="dashboard"
+            :percentage="100"
+            :width="$screen.size === 'xs' ? '120' : '200'"
+            status="warning"
+        >
           <template #default>
-            <span class="hard-skills__content-item">
+            <span class="hard-skills__content-item text-default">
               TypeScript
             </span>
           </template>
         </el-progress>
 
-        <el-progress type="dashboard" :percentage="100" width="200" status="exception">
+        <el-progress
+            type="dashboard"
+            :percentage="100"
+            :width="$screen.size === 'xs' ? '120' : '200'"
+            status="exception"
+        >
           <template #default>
-            <span class="hard-skills__content-item">JavaScript</span>
+            <span class="hard-skills__content-item text-default">JavaScript</span>
           </template>
         </el-progress>
 
-        <el-progress type="dashboard" :percentage="100" width="200" status="warning">
+        <el-progress
+            type="dashboard"
+            :percentage="100"
+            :width="$screen.size === 'xs' ? '120' : '200'"
+            status="warning"
+        >
           <template #default>
-            <span class="hard-skills__content-item">Vue JS</span>
+            <span class="hard-skills__content-item text-default">Vue JS</span>
           </template>
         </el-progress>
 
-        <el-progress type="dashboard" :percentage="100" width="200" status="exception">
+        <el-progress
+            type="dashboard"
+            :percentage="100"
+            :width="$screen.size === 'xs' ? '120' : '200'"
+            status="exception"
+        >
           <template #default>
-            <span class="hard-skills__content-item">
+            <span class="hard-skills__content-item text-default">
               Webpack
             </span>
           </template>
         </el-progress>
 
-        <el-progress type="dashboard" :percentage="100" width="200" status="warning">
+        <el-progress
+            type="dashboard"
+            :percentage="100"
+            :width="$screen.size === 'xs' ? '120' : '200'"
+            status="warning"
+        >
           <template #default>
-            <span class="hard-skills__content-item">Git</span>
+            <span class="hard-skills__content-item text-default">Git</span>
           </template>
         </el-progress>
 
-        <el-progress type="dashboard" :percentage="100" width="200" status="exception">
+        <el-progress
+            type="dashboard"
+            :percentage="100"
+            :width="$screen.size === 'xs' ? '120' : '200'"
+            status="exception"
+        >
           <template #default>
-            <span class="hard-skills__content-item">Nuxt JS</span>
+            <span class="hard-skills__content-item text-default">Nuxt JS</span>
           </template>
         </el-progress>
 
-        <el-progress type="dashboard" :percentage="100" width="200" status="warning">
+        <el-progress
+            type="dashboard"
+            :percentage="100"
+            :width="$screen.size === 'xs' ? '120' : '200'"
+            status="warning"
+        >
           <template #default>
-            <span class="hard-skills__content-item">
+            <span class="hard-skills__content-item text-default">
               El - Plus
             </span>
           </template>
         </el-progress>
 
-        <el-progress type="dashboard" :percentage="100" width="200" status="exception">
+        <el-progress
+            type="dashboard"
+            :percentage="100"
+            :width="$screen.size === 'xs' ? '120' : '200'"
+            status="exception"
+        >
           <template #default>
-            <span class="hard-skills__content-item">Linters</span>
+            <span class="hard-skills__content-item text-default">Linters</span>
           </template>
         </el-progress>
 
-        <el-progress type="dashboard" :percentage="100" width="200" status="warning">
+        <el-progress
+            type="dashboard"
+            :percentage="100"
+            :width="$screen.size === 'xs' ? '120' : '200'"
+            status="warning"
+        >
           <template #default>
-            <span class="hard-skills__content-item">Node JS</span>
+            <span class="hard-skills__content-item text-default">Node JS</span>
           </template>
         </el-progress>
       </el-col>
@@ -87,11 +132,28 @@ import DataIcon from '@/assets/icons/data.svg'
     justify-content: center;
     margin-bottom: 100px;
     padding-top: 20px;
+
+    @media (max-width: $screen--laptop-max) {
+      margin-bottom: 70px;
+    }
+
+    @media (max-width: $screen--mobile-max) {
+      margin-bottom: 30px;
+    }
   }
 
   &__content {
     &-title {
       letter-spacing: 2px;
+
+      &-wrapper {
+        margin-bottom: 20px;
+        padding-left: 80px;
+
+        @media (max-width: $screen--mobile-max) {
+          padding-left: 0;
+        }
+      }
     }
 
     &-description {
@@ -100,14 +162,25 @@ import DataIcon from '@/assets/icons/data.svg'
     }
 
     &-item {
-      font-size: 30px;
       color: $color--text;
     }
 
     &-icon {
-      width: 400px;
+      max-width: 100%;
       color: $color--gray-dark;
       opacity: 0.4;
+
+      @media (max-width: $screen--laptop-max) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 500px;
+        max-height: 500px;
+        opacity: 0.05;
+      }
+
+      @media (max-width: $screen--laptop-min) {
+      }
     }
 
     &-wrapper {

@@ -8,22 +8,50 @@ a {
   text-decoration: none;
 }
 
+.router-link-active {
+  color: var(--el-color-danger-dark-2);
+}
+
 .text {
   &-title {
     font-size: 50px;
     font-weight: 700;
     letter-spacing: 2px;
     color: $color--gray-dark;
+
+    @media (max-width: $screen--laptop-min) {
+      font-size: 45px;
+    }
+
+    @media (max-width: $screen--mobile-max) {
+      font-size: 30px;
+    }
   }
 
   &-default {
     line-height: 150%;
     font-size: 25px;
     letter-spacing: 2px;
+
+    @media (max-width: $screen--laptop-min) {
+      font-size: 20px;
+    }
+
+    @media (max-width: $screen--mobile-max) {
+      font-size: 15px;
+    }
   }
 
   &-large {
     font-size: 30px;
+
+    @media (max-width: $screen--laptop-min) {
+      font-size: 25px;
+    }
+
+    @media (max-width: $screen--mobile-max) {
+      font-size: 20px;
+    }
   }
 
   &-bold {

@@ -28,12 +28,30 @@ import Projects from '@/components/home/Projects.vue'
 
   &__hard-skills {
     margin-bottom: 60px;
-    padding: 0 300px;
+    padding: 0 200px;
   }
 
   &__projects {
-    padding: 0 300px 60px;
+    padding: 0 200px 60px;
     background-color: #E5EAF3;
+  }
+
+  @media (max-width: $screen--desktop-max) {
+    &__profile {
+      padding: 0 30px;
+    }
+
+    &__experience {
+      padding: 0 30px;
+    }
+
+    &__hard-skills {
+      padding: 0 30px;
+    }
+
+    &__projects {
+      padding: 0 30px 30px;
+    }
   }
 }
 </style>

@@ -1,6 +1,12 @@
 .el-menu {
   background-color: transparent;
 
+  &-item {
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
   &--horizontal {
     border: none;
   }
