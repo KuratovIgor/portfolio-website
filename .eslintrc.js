@@ -21,12 +21,10 @@ module.exports = {
     quotes: ['error', 'single'],
     'import/no-unresolved': 'off',
     'no-plusplus': 'off',
-    'import/extensions': [
-      'error',
-      'never',
-    ],
     'no-restricted-syntax': ['error', 'BinaryExpression[operator=\'in\']'],
     'vue/multi-word-component-names': 'off',
     'import/extensions': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'no-unused-vars': 'off',
   },
 }
